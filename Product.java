@@ -11,7 +11,7 @@ public class Product {
 			throw new IllegalArgumentException("Id måste finnas");
 		}
 
-		if(name == null){
+		if(name == null || name.isBlank()){
 			throw new IllegalArgumentException("Namn måste finnas");
 		}
 
