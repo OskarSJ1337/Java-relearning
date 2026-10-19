@@ -1,3 +1,5 @@
+import java.math.BigDecimal;
+
 public class OrderItem {
     private Product product;
     private int quantity;
@@ -14,4 +16,12 @@ public class OrderItem {
         this.product = product;
         this.quantity = quantity;
     }
+
+	public BigDecimal getTotalPrice() {
+		BigDecimal price = product.getPrice();
+		BigDecimal amount = BigDecimal.valueOf(quantity);
+		BigDecimal total = price.multiply(amount);
+
+		return total;
+	}
 }

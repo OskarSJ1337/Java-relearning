@@ -10,6 +10,7 @@ public class Main {
         System.out.println("Id: " + keyboard.getId());
         System.out.println("Namn: " + keyboard.getName());
         System.out.println("Pris: " + keyboard.getPrice());
-		OrderItem item = new OrderItem(keyboard, 2);
+		OrderItem item = new OrderItem(keyboard, 3);
+		System.out.println(item.getTotalPrice());
     }
 }
