@@ -12,5 +12,8 @@ public class Main {
         System.out.println("Pris: " + keyboard.getPrice());
 		OrderItem item = new OrderItem(keyboard, 3);
 		System.out.println(item.getTotalPrice());
+
+		Order order = new Order();
+		System.out.println(order.getStatus());
     }
 }
